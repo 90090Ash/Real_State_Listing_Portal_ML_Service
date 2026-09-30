@@ -1,0 +1,26 @@
+"/c/Program Files/PostgreSQL/18/bin/psql.exe" -U postgres
+\c real_estate_db
+\dt
+1️⃣ Tab 1: Start the Python ML Service (Port 5001)
+Navigate to your ML directory and launch the Flask server:
+
+Bash
+cd ml-service
+python app.py
+Expected Output: * Running on [http://127.0.0.1:5001](http://127.0.0.1:5001)
+
+2️⃣ Tab 2: Start the Express Backend Server (Port 5000)
+Navigate to your backend/server directory and run nodemon:
+
+Bash
+cd server
+npx nodemon server.js
+Expected Output: 🚀 Server running on port 5000
+
+3️⃣ Tab 3: Start the React Frontend Client (Port 3000)
+Navigate to your React client directory and start the dev server:
+
+Bash
+cd client
+npm start
+Expected Output: Opens http://localhost:3000 automatically in your browser!
